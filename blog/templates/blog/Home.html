@@ -1,0 +1,37 @@
+{% extends 'Base.html' %}
+{% load static %}
+{% block page_title %}
+    My Blog
+{% endblock %}
+{% block header_refrences %}
+    <link rel="stylesheet" href="{% static 'blog/index.css' %}">
+{% endblock %}
+{% block content %}
+    {% include 'blog/includes/menu-header.html' %}
+    <section id="welcome">
+        <header>
+            <img src="{% static 'blog/images/photo_2023-05-16_17-37-27.jpg' %}" alt="Image">
+            <h2>Top learn blog project</h2>
+        </header>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, voluptatibus!</p>
+    </section>
+    <section id="latest-posts" class="container w-75">
+        <h2>Latest posts</h2>
+        <ul>
+            {% for post in latest_post %}
+                {% include 'blog/includes/post.html' %}
+            {% endfor %}
+        </ul>
+    </section>
+    <section id="about">
+        <h2>About me</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus adipisci blanditiis cum dicta, dolores
+            eius, error facilis harum in laborum magni necessitatibus nihil non, quod rem repudiandae sequi unde.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium eius fugit ipsam iure quibusdam.
+            Dolorum fuga incidunt, nobis perspiciatis sequi velit vitae! Asperiores, deleniti dicta dolorem et ex harum
+            inventore itaque magnam nemo nihil, nostrum placeat provident, quis reprehenderit soluta veniam veritatis?
+            Ab, adipisci culpa cumque deleniti doloremque facilis magnam nihil odit omnis quam quia quis quos saepe
+            suscipit voluptate.</p>
+
+    </section>
+{% endblock %}

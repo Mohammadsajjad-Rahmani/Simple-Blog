@@ -1,0 +1,33 @@
+#all-posts {
+    margin: 5rem auto;
+    width: 90%;
+    max-width: 60rem;
+}
+.title{
+    font-size: 1.7rem;
+}
+h2 {
+    font-size: 2rem;
+    color: #c21f1f;
+}
+
+#all-posts h3, p {
+    text-align: start;
+    margin-left: 5px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.post a {
+    height: 22rem;
+    transform-origin: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+    border-radius: 30px;
+    margin: 15px 0;
+    border: 2px dashed black;
+}
+body{
+    background: #ececec
+}

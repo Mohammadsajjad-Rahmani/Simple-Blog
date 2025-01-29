@@ -1,0 +1,41 @@
+#summary {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1300px;
+    margin: 10px auto;
+    background: #4242ff;
+    border-radius: 20px;
+    padding: 25px;
+}
+
+#summary article img {
+    width: 200px;
+    border: 4px dashed white;
+    border-radius: 20px;
+    transform: rotateZ(5deg);
+}
+
+#summary h2 {
+    color: white;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+#summary article address {
+    color: white;
+    font-weight: bold;
+}
+
+#summary article div {
+    color: white;
+    font-weight: bold;
+}
+
+main {
+    max-width: 1300px;
+    margin: 10px auto;
+    border-radius: 20px;
+    padding: 25px;
+}
